@@ -33,7 +33,8 @@ sensor:
           {{ states('input_text.vacuum_name') }} Cycle
         value_template: >-
           {% set mapper =  {
-            'clean' : 'Cleaning',
+            'clean' : 'Cleaning',      
+            'quick' : 'Cleaning',
             'evac' : 'Emptying Robot',
             'dock' : 'Returning Home',
             'none' : 'Ready' } %}
